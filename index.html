@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header  class="page-header">
-      <img class="logo" src="images/sedona-logo.svg" width="139" height="70" alt="Лого сайта">
+      <a class="navigation-logo" href="index.html"> 
+        <img class="logo" src="images/sedona-logo.svg" width="139" height="70" alt="Лого сайта">
+      </a> 
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -36,7 +39,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда!</a>
+            <a class="navigation-link button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -47,8 +50,8 @@
       <section class="first-screen">
         <h2 class="visually-hidden">Город Седона</h2>
         <img src="images/greeting.svg" width="458" height="352" alt="Добро пожаловать в прекрасную Седону. «Потому что Гранд Каньон отстой!»">  
-        <img src="images/divider.svg" width="1200" height="57" alt="Разделитель между заголовками">
         <div class="sedona-text">
+          <img src="images/divider.svg" width="1200" height="57" alt="Разделитель между заголовками">
           <p class="sedona-description">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
           <p class="sedona-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
@@ -70,7 +73,7 @@
               <h4 class="advantages-title">Жильё</h4>
               <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
-            <li class="advantages-item">
+            <li class="advantages-item advantages-item-white-background">
               <img class="icon" src="images/icon-food.svg" width="74" height="70" alt="Иконка еды">
               <h4 class="advantages-title">Еда</h4>
               <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
@@ -97,7 +100,7 @@
               <p class="numbering-of-advantages">— №3 —</p>
               <p class="advantages-description">Все достопримечательности находятся очень близко</p>
             </li>
-            <li class="advantages-item">
+            <li class="advantages-item advantages-item-blue-background">
               <h4 class="advantages-title">Красивая дорога</h4>
               <p class="numbering-of-advantages">— №4 —</p>
               <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
@@ -114,12 +117,12 @@
       <section class="hotel-search">
         <h2 class="hotel-search-title">Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a href="#">поиск гостиницы в седоне</a>
+        <a class="button" href="#">поиск гостиницы в седоне</a>
       </section>
 
       <section class="mailing">
         <h2 class="mailing-title">Подпишитесь на рассылку</h2>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="mailing-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="mailing-email">Почта</label>
           <input type="text" id="mailing-email" name="mailing-email" placeholder="Ваш e-mail">
