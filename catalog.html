@@ -57,10 +57,11 @@
                     <span class="visually-hidden">
                       Главная
                     </span>
+                    <img src="images/home-icon.svg" width="12px" height="12px" alt="Ссылка на главную страницу">
                   </a>
                 </li>
                 <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-link">Каталог</a>
+                  <a class="breadcrumbs-link">Гостиницы</a>
                 </li>
               </ul>
             </header>
@@ -121,19 +122,21 @@
             </form>
           </div>
           <div class="hotels-found">
-            <span class="hotels-found-text">найдено гостиниц: 38</span>
-            <select class="select-control" aria-label="Сортировка">
-              <option value="cheap">Сначала дешёвые</option>
-            </select>
-            <a class="button" href="#">
-              <span class="visually-hidden">Показать карточки</span>
-            </a>
-            <a class="button" href="#">
-              <span class="visually-hidden">Показать слайды</span>
-            </a>
-            <a href="#" class="button button-light">
-              <span class="visually-hidden">Показать список</span>
-            </a>
+            <div class="sorting-container">
+              <span class="hotels-found-text">найдено гостиниц: 38</span>
+              <select class="select-control" aria-label="Сортировка">
+                <option value="cheap">Сначала дешёвые</option>
+              </select>
+              <a class="button" href="#">
+                <span class="visually-hidden">Показать карточки</span>
+              </a>
+              <a class="button" href="#">
+                <span class="visually-hidden">Показать слайды</span>
+              </a>
+              <a href="#" class="button button-light">
+                <span class="visually-hidden">Показать список</span>
+              </a>
+            </div>
             <ul class="hotel-list">
               <li class="hotel-card">
                 <a class="hotel-card-link" href="#">
@@ -185,34 +188,36 @@
               </li>
             </ul>
             <button class="button pagination-load-more" type="button">Загрузить ещё</button>
-            <ul class="pagination">
-              <li class="pagination-item">
-                <a class="pagination-link pagination-current">1</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">2</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">3</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">4</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link pagination-more-pages" href="#">
-                  <span class="visually-hidden">Больше страниц</span>
-                </a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">10</a>
-              </li>
-            </ul>
-            <div class="hotels-amount">
-              <span>Гостиниц на странице:</span>
-              <select>
-                <option value="4">4</option>
-              </select>
-            </div>
+            <div class="pagination-container">
+              <ul class="pagination">
+                <li class="pagination-item">
+                  <a class="pagination-link pagination-current">1</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">2</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">3</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">4</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link pagination-more-pages" href="#">
+                    <span class="visually-hidden">Больше страниц</span>
+                  </a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">10</a>
+                </li>
+              </ul>
+              <div class="hotels-amount">
+                <span>Гостиниц на странице:</span>
+                <select>
+                  <option value="4">4</option>
+                </select>
+              </div>
+            </div>      
           </div>
         </section>
         
