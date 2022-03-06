@@ -64,11 +64,19 @@
                     <span class="visually-hidden">
                       Главная
                     </span>
-                    <img src="images/home-icon.svg" width="12px" height="12px" alt="Ссылка на главную страницу">
+                    <svg class="breadcrumbs-icon" width="12" height="12" viewBox="0 0 12 12" fill="white" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 0.300049L0 5.80005V12H12V5.80005L6 0.300049ZM11 11H1V6.20005L6 1.70005L11 6.20005V11Z"/>
+                      <path d="M4 10H5V7.5H7V10H8V6.5H4V10Z"/>
+                    </svg>
                   </a>
                 </li>
                 <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-link">Гостиницы</a>
+                  <svg width="5" height="8" viewBox="0 0 5 8" fill="rgba(255, 255, 255, 0.3)" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.79998 3.60005L0.999984 0.200049C0.799984 4.88311e-05 0.399984 4.88311e-05 0.0999836 0.200049C-0.200016 0.400049 -0.100016 0.800049 0.0999836 1.00005L3.39998 4.00005L0.199984 7.00005C-1.63764e-05 7.20005 -1.63764e-05 7.60005 0.199984 7.80005C0.199984 7.90005 0.499984 8.00005 0.599984 8.00005C0.699984 8.00005 0.899984 7.90005 0.999984 7.80005L4.79998 4.40005C5.09998 4.20005 5.09998 3.80005 4.79998 3.60005Z"/>
+                  </svg>
+                </li>
+                <li class="breadcrumbs-item">
+                  <a class="breadcrumbs-link" href="catalog.html">Гостиницы</a>
                 </li>
               </ul>
             </header>
@@ -79,19 +87,19 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="pool" checked>
+                      <input class="control-input checkbox-input" type="checkbox" name="pool" checked>
                       Бассейн
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="parking" checked>
+                      <input class="control-input checkbox-input" type="checkbox" name="parking" checked>
                       Парковка
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="wi-fi">
+                      <input class="control-input checkbox-input" type="checkbox" name="wi-fi">
                       Wi-Fi
                     </label>
                   </li>
@@ -143,7 +151,7 @@
                 <a class="view-card" href="#">
                   <span class="visually-hidden">Показать слайды</span>
                 </a>
-                <a href="#" class="view-card">
+                <a class="view-card" href="#">
                   <span class="visually-hidden">Показать список</span>
                 </a>
               </div>
