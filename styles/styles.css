@@ -31,6 +31,11 @@ body {
     color: #000000;
 }
 
+img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
 .wrapper {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 1200px;
@@ -350,7 +355,7 @@ body {
 
 .mailing-background {
     background-image: url("../images/background.jpg");
-    background-size: 100% 100%; /**/
+    background-size: 100% 100%; 
     background-repeat: no-repeat;
 }
 
@@ -481,6 +486,7 @@ body {
     padding: 0;
     list-style-type: none;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .breadcrumbs-item {
@@ -535,10 +541,10 @@ body {
     display: flex;
     min-height: 48px;
     margin: 0 auto;
-    margin-top: 44px;
     margin-bottom: 53px;
     align-items: center;
     position: relative;
+    flex-wrap: wrap;
 }
 
 .sorting-container .button {
@@ -548,6 +554,7 @@ body {
 
 .catalog-filter{
     display: flex;
+    flex-wrap: wrap;
     margin-top: 45px;
     margin-right: 72px;
 }
@@ -611,7 +618,8 @@ body {
     line-height: 23px;
     background-color: transparent;
     border: none;
-    appearance: textfield;
+    -webkit-appearance: textfield;
+            appearance: textfield;
     margin: 0;
     height: 48px;
     box-sizing: border-box;
@@ -625,7 +633,8 @@ body {
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button,
 .modal-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -685,6 +694,8 @@ body {
     position: absolute;
     height: 4px;
     background-color: #ffffff;
+    left: 10px; 
+    width: 217px
 }
 
 .range-toggle {
@@ -798,8 +809,8 @@ body {
 
 .pagination-container {
     display: flex;
+    flex-wrap: wrap;
     padding: 0; 
-    margin-top: 30px;
     max-width: 1056px;
 }
   
@@ -808,6 +819,7 @@ body {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    margin-top: 30px;
 }
 
 .pagination-item:not(:last-child) {
@@ -862,6 +874,7 @@ body {
     margin-left: auto;
     height: 48px;
     width: 386px;
+    margin-top: 30px
 }
 
 .hotels-amount-text {
@@ -872,7 +885,8 @@ body {
     border: 2px solid #E6E6E6;
     width: 160px;
     padding-left: 17px;
-    appearance: none; 
+    -webkit-appearance: none;
+            appearance: none; 
     background-image: url("../images/select-arrow.svg");
     background-repeat: no-repeat;
     background-position: right 16px center;
@@ -965,7 +979,7 @@ body {
 }
 
 .hotels-found {
-    width: 1057px;
+    width: 1060px;
     margin: 0 auto;
 }
 
@@ -978,6 +992,7 @@ body {
     margin: 0;
     margin-right: 192px;
     position: relative;
+    margin-top: 44px;
 }
 
 .select-control {
@@ -991,10 +1006,12 @@ body {
     font: inherit;
     font-size: 18px;
     line-height: 23px;
-    appearance: none; 
+    -webkit-appearance: none;
+            appearance: none; 
     background-image: url("../images/select-arrow.svg");
     background-repeat: no-repeat;
     background-position: right 16px center;
+    margin-top: 44px;
 }
 
 .select-control:hover, .select-control:focus, .hotels-amount-selector:hover, .hotels-amount-selector:focus {
@@ -1009,6 +1026,7 @@ body {
     justify-content: flex-end;
     column-gap: 8px;
     flex-grow: 1;
+    margin-top: 44px;
 }
 
 .view-card {
