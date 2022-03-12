@@ -92,6 +92,7 @@ img {
     text-align: center;
     text-decoration: none;
     color:#000000;
+    box-sizing: border-box;
 }
 
 .navigation-link-current {
@@ -123,15 +124,11 @@ img {
 }
   
 .navigation-link:focus .navigation-icon {
-    fill: none;
+    outline: 3px solid #83B3D3;
 }
 
 .navigation-link:active .navigation-icon {
     fill: rgba(117, 98, 87, 0.3);
-}
-
-.navigation-link:focus .navigation-item-counter {
-    background: none;
 }
 
 .navigation-link:active .navigation-item-counter {
@@ -171,7 +168,6 @@ img {
 .navigation-link.button:focus {
     background: #615048;
     outline: 3px solid #83B3D3;
-    border-radius: 4px;
 }
 
 .navigation-link.button:active {
