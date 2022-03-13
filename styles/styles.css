@@ -184,7 +184,7 @@ img {
     margin: auto;
 }
 
-.navigation-user .navigation-item:nth-child(2) .navigation-link {
+.favorite-link {
     padding-bottom: 0;
 }
 
@@ -653,19 +653,19 @@ img {
     border-radius: 0px 4px 4px 0px;
 }
 
-.catalog-filter-label:nth-child(1):hover,
-.catalog-filter-label:nth-child(2):hover {
+.min-price input:hover,
+.max-price input:hover {
     border-color: rgba(255, 255, 255, 0.6);
 }
 
-.catalog-filter-label:nth-child(1) input:focus,
-.catalog-filter-label:nth-child(2) input:focus {
+.max-price input:focus,
+.min-price input:focus {
     outline: 3px solid #81B3D2;
     z-index: 1;
 }
 
-.catalog-filter-label:nth-child(1) input:active,
-.catalog-filter-label:nth-child(2) input:active {
+.max-price input:active,
+.min-price input:active {
     background: #756257;
 }
 
