@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -18,7 +18,7 @@
                 <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link" href="#">О седоне</a>
+                <a class="navigation-link" href="#">О Седоне</a>
               </li>
               <li class="navigation-item">
                 <a class="navigation-link" href="catalog.html">Гостиницы</a>
@@ -92,21 +92,21 @@
                   <p class="advantages-description-icon">Всегда заказывайте <br> топовый фирменный бургер, <br> вы не разочаруетесь!</p>
                 </li>
                 <li class="advantages-item">
-                  <img class="icon" src="images/icon-gift.svg" width="64" height="76" alt="Иконка подарка">
+                  <img class="icon present-icon" src="images/icon-gift.svg" width="64" height="76" alt="Иконка подарка">
                   <h4 class="advantages-title-icon">Сувениры</h4>
                   <p class="advantages-description-icon">Не только китайского, <br> но и настоящего местного <br> производства!</p>
                 </li>
               </ul>
             </div>
             <div class="devils-bridge">
+              <div class="sedona-photo">
+                <img src="images/devil-bridge.jpg" width="800" height="384" alt="Фотография моста Дьявола">
+              </div>
               <div class="devils-bridge-text">
                 <h3 class="visually-hidden">Мост Дьявола.</h3>
                 <h4 class="advantages-title">Там есть <br> мост Дьявола</h4>
                 <p class="numbering-of-advantages">— №2 —</p>
                 <p class="advantages-description"> Да, по нему можно пройти! <br> Если вы осмелитесь, <br> разумеется </p>
-              </div>
-              <div class="sedona-photo">
-                <img src="images/devil-bridge.jpg" width="800" height="384" alt="Фотография моста Дьявола">
               </div>
             </div>
             <div class="advantages-items">
@@ -133,7 +133,7 @@
           <section class="hotel-search">
             <h2 class="hotel-search-title">Заинтересовались?</h2>
             <p class="hotel-search-text">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <a class="button button-hotel-search" href="catalog.html">поиск гостиницы в седоне</a>
+            <a class="button button-hotel-search" href="#openModal">поиск гостиницы в седоне</a>
           </section>
           <section class="mailing mailing-background">
             <h2 class="mailing-title">Подпишитесь на рассылку</h2>
@@ -141,7 +141,7 @@
             <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="mailing-email">Почта.</label>
               <input class="mailing-input" type="text" id="mailing-email" name="mailing-email" placeholder="Ваш e-mail">
-              <button class="button" type="submit">Подписаться</button>
+              <button class="button subscribe-button" type="submit">Подписаться</button>
             </form>
           </section>
         </div>
@@ -208,14 +208,14 @@
           </section>
         </div>
       </footer>
-      <div class="modal-container modal-container-close">
+      <div id="openModal" class="modal-container"> 
         <div class="modal modal-search">
-          <button class="modal-close-button" type="button">
+          <a class="modal-close-button" href="#close">
             <span class="visually-hidden">Закрыть.</span>
             <svg class="close-button-icon" width="13" height="13" viewBox="0 0 13 13" fill="black" xmlns="http://www.w3.org/2000/svg">
               <path d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z"/>
             </svg>
-          </button>
+          </a>
           <section class="modal-content">
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
