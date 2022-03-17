@@ -277,6 +277,7 @@ img {
 
 .advantages-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 0;
     padding: 0;
@@ -906,6 +907,7 @@ img {
     line-height: 23px;
     box-sizing: border-box;
     margin-right: -2px;
+    background-color: #ffffff;
 }
 
 .mailing-form {
@@ -1029,6 +1031,7 @@ img {
     background-repeat: no-repeat;
     background-position: right 16px center;
     margin: 44px 82px 0 0;
+    background-color: #ffffff;
 }
 
 .select-control:hover, .select-control:focus, .hotels-amount-selector:hover, .hotels-amount-selector:focus {
